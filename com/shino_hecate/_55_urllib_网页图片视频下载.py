@@ -8,7 +8,7 @@
 import urllib.request as request
 
 # response01 = request.urlretrieve(url='http://www.baidu.com',filename='baidu.html')
-response01 = request.urlretrieve(url='https://baike.baidu.com/pic/LiSA/5001180/1/aa18972bd40735fae6cd10d7c01818b30f2442a7a20e?fr=lemma&fromModule=lemma_top-image&ct=single#aid=1&pic=aa18972bd40735fae6cd10d7c01818b30f2442a7a20e',filename='LiSA.jpg')
+response01 = request.urlretrieve(url='https://bkimg.cdn.bcebos.com/pic/aa18972bd40735fae6cd10d7c01818b30f2442a7a20e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5',filename='LiSA.jpg')
 
 
 
