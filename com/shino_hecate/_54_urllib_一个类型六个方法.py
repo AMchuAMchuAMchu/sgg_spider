@@ -10,7 +10,16 @@ import urllib.request as request
 
 response01 = request.urlopen(url='http://www.baidu.com')
 
-print(response01)
+# print(response01)
+
+# res01 = response01.read()
+# res01 = response01.readline()
+# res01 = response01.readlines()
+# res01 = response01.getcode()
+# res01 = response01.geturl()
+res01 = response01.getheaders()
+
+print(res01)
 
 
 
