@@ -7,7 +7,6 @@
 
 import urllib.request as request
 
-
 response01 = request.urlopen(url='http://www.baidu.com')
 
 # print(response01)
@@ -20,7 +19,3 @@ response01 = request.urlopen(url='http://www.baidu.com')
 res01 = response01.getheaders()
 
 print(res01)
-
-
-
-

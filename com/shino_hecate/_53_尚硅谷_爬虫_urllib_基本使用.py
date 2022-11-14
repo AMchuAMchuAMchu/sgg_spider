@@ -12,4 +12,3 @@ response01 = request.urlopen(url="http://www.baidu.com")
 content01 = response01.read().decode('utf-8')
 
 print(content01)
-
