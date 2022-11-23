@@ -15,17 +15,17 @@ headers = {
     'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35'
 }
 
-post = {
+data = {
     'kw':'spider'
 }
 
-data = parse.urlencode(post)
+data = parse.urlencode(data).encode('utf-8')
 
 request01 = request.Request(url=url,data=data,headers=headers)
 
 result01 = request.urlopen(request01)
 
-print(result01)
+print(result01.read().decode('utf-8'))
 
 
 
