@@ -37,6 +37,13 @@ content01 = result01.read().decode('utf-8')
 
 print(content01)
 
+import json
+
+content02 = json.loads(content01)
+
+print(content02)
+
+
 
 
 
