@@ -14,7 +14,7 @@ url = 'https://fanyi.baidu.com/v2transapi?from=en&to=zh'
 
 headers = {
 'Accept':'*/*',
-'Accept-Encoding':'gzip, deflate, br',
+# 'Accept-Encoding':'gzip, deflate, br',
 'Accept-Language':'zh-CN,zh;q=0.9,en;q=0.8',
 'Acs-Token':'1669273447716_1669288824024_9SYLeTVBFdSeC07WNbyQaC93iMmJjuOD/cc5VSNkfxRW44wyfR0jFUFCwVazcPyE28yJBE9PI767lCpfYSzCxD9NLo5YxV4G+m+0qqZYR0oUX8xkFbLwIQ8pXu9NqUoKEyPRlz20e6Pas0JeSUL15cMwqFjt+jB5dtb7xW2lheGtPbAJjeCO05zBOEsZaonmNeK0gC+pNIdsclKZ0GOkApoaivhoN5r9E0Xmjzcuh5aGDXbvt1MUzD9rhXuLJ0MIQpUrapzeCSdPrgWpeaJq64WGPCZPcXcaUqYRyuPOHyQ=',
 'Connection':'keep-alive',
@@ -53,7 +53,7 @@ result01 = request.urlopen(request01)
 
 content01 = result01.read().decode('utf-8')
 
-print(content01)
+# print(content01)
 
 import json
 
