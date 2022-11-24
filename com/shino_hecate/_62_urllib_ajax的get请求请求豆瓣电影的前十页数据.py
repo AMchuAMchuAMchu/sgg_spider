@@ -31,8 +31,6 @@ def create_request(page):
 
     content_str = content.read().decode('utf-8')
 
-    file = open(file=r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\assets\_02_douban_10.json',mode='w',encoding='utf-8')
-
     file.writelines(content_str)
     file.write('\n')
 
@@ -43,6 +41,8 @@ def create_request(page):
 if __name__ == '__main__':
     start_page = int(input('请输入其实的页码:'))
     end_page = int(input('请输入结束页码:'))
+    file = open(file=r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\assets\_02_douban_10.json',mode='w',encoding='utf-8')
+
 
     for page in range(start_page,end_page+1):
         create_request(page)
