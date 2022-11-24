@@ -25,7 +25,9 @@ request01 = request.Request(url=url,data=data,headers=headers)
 
 result01 = request.urlopen(request01)
 
-print(result01.read().decode('utf-8'))
+result02 = result01.read().decode('utf-8')
+
+print(result02)
 
 
 
