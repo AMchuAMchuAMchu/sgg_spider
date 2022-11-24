@@ -33,9 +33,10 @@ def create_request(page):
 
     file = open(file=r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\assets\_02_douban_10.json',mode='w',encoding='utf-8')
 
-    file.write(content_str)
+    file.writelines(content_str)
+    file.write('\n')
 
-    file.close()
+
 
 
 # 程序的入口
