@@ -18,9 +18,11 @@ request01 = request.Request(url=url,headers=headers)
 
 response01 = request.urlopen(request01)
 
-content = response01.read().decode('utf-8')
+content = response01.read().decode('gb2312')
 
 print(content)
-
+file=r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\assets\_04_weibo_login.html'
+with open(file=file,mode='w',encoding='gb2312') as fp:
+    fp.writelines(content)
 
 
