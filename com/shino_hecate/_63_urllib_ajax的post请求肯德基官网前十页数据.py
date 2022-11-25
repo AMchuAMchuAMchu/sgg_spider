@@ -31,11 +31,11 @@ def create_request(page):
         'pageSize':'10'
     }
 
-    url = base_url + parse.urlencode(data)
-
+    url = base_url
+    data = parse.urlencode(data).encode('utf-8')
     # print(url)
 
-    request_pretend = request.Request(url=url,headers=headers)
+    request_pretend = request.Request(url=url,data=data,headers=headers)
 
     content = request.urlopen(request_pretend)
 

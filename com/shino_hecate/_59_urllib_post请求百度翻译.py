@@ -31,7 +31,6 @@ result02 = result01.read().decode('utf-8')
 
 print(result02)
 
-
 content03 = json.loads(result02)
 
 print(content03)
