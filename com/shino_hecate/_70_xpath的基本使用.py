@@ -15,7 +15,9 @@ html_tree = etree.parse('_70_xpath的基本使用.html')
 # li_list = html_tree.xpath('//ul/li[@id]')
 # li_list = html_tree.xpath('//ul/li[@id]/text()')
 # li_list = html_tree.xpath('//ul/li[@id="l1"]/text()')
-li_list = html_tree.xpath('//ul/li[@id="l1"]/@class')
+# li_list = html_tree.xpath('//ul/li[@id="l1"]/@class')
+# li_list = html_tree.xpath('//ul/li[contains(@id,"l")]/text()')
+li_list = html_tree.xpath('//ul/li[starts-with(@id,"c")]/text()')
 
 # print(li_list)
 
