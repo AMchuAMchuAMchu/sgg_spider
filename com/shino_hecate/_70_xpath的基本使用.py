@@ -9,7 +9,22 @@ from lxml import etree
 
 html_tree = etree.parse('_70_xpath的基本使用.html')
 
-print(html_tree)
+# print(html_tree)
+
+# li_list = html_tree.xpath('//ul/li')
+# li_list = html_tree.xpath('//ul/li[@id]')
+# li_list = html_tree.xpath('//ul/li[@id]/text()')
+# li_list = html_tree.xpath('//ul/li[@id="l1"]/text()')
+li_list = html_tree.xpath('//ul/li[@id="l1"]/@class')
+
+# print(li_list)
+
+# print(len(li_list))
+print(li_list)
+
+
+
+
 
 
 
