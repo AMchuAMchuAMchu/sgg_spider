@@ -21,8 +21,9 @@ content = response01.read().decode('utf-8')
 
 print(content)
 
-
-
+with open(file=r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\assets\_05_proxy.txt',mode='w',encoding='utf-8') as fp:
+    fp.writelines(content)
+    fp.close()
 
 
 
