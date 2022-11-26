@@ -17,7 +17,15 @@ headers = {
 
 request01 = request.Request(url=url,headers=headers)
 
-response01 = request.urlopen(request01)
+proxies = {
+    'http:':'http://39.108.147.142:3389'
+}
+
+proxyHandler01 = request.ProxyHandler(proxies=proxies)
+
+opener01 = request.build_opener(proxyHandler01)
+
+response01 = opener01.open(request01)
 
 content = response01.read().decode('utf-8')
 
