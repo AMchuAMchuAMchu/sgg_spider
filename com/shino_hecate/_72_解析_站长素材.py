@@ -24,7 +24,7 @@ def acquire_pic(page):
     content_html = etree.HTML(text=content)
 
     content_data_origin = content_html.xpath('//div[@class="item"]/img/@data-original')
-    content_title = content_html.xpath('//div[@class="bot-div"]/a/@title')
+    content_title = content_html.xpath('//div[@class="item"]/img/@alt')
 
     print(len(content_data_origin))
     print(len(content_title))
