@@ -28,7 +28,8 @@ for i in range(len(cafe_names)):
     # print(cafe_names[i].get_text())
     # print(img_names)
     url = 'https://www.starbucks.com.cn%s'%(img_names)
-    # print(url)
+    # print(url) #先打印一下看看url长什么样之后再处理...
+    # 特殊符号无法作为文件名,需要替换掉
     pic_name = cafe_names[i].get_text().replace('（','_').replace('）','_').replace('/','_')
     filename = r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\assets\strabucks_img\%s.jpg' % (pic_name)
     request.urlretrieve(url=url,filename=filename)
@@ -41,9 +42,9 @@ for i in range(len(cafe_names)):
 
 
 # 'https://www.starbucks.com.cn/menu/'
-'https://www.starbucks.com.cn/menu/images/products/cold-brew-malt.jpg'
+# 'https://www.starbucks.com.cn/menu/images/products/cold-brew-malt.jpg'
 # 'https://www.starbucks.com.cn/menu/beverages/coffee-plus-ice-cream/images/products/cold-brew-malt.jpg'
-'http://www.starbucks.com.cn/menu/beverages/coffee-plus-ice-cream/images/products/cold-brew-malt.jpg'
+# 'http://www.starbucks.com.cn/menu/beverages/coffee-plus-ice-cream/images/products/cold-brew-malt.jpg'
 # 'images/products/cold-brew-malt.jpg'
 
 

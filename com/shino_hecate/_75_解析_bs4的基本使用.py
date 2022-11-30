@@ -39,7 +39,7 @@ bs_res01 = BeautifulSoup(markup=file,features='lxml')
 # for i in range(len(bs_res)):
 #     print(bs_res[i].string)
 
-
+# 注意返回值是列表的说
 bs_res02 = bs_res01.select('#s1')[0]
 
 # print(bs_res02.name)
