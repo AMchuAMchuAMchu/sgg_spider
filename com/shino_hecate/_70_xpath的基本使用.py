@@ -18,11 +18,12 @@ html_tree = etree.parse('_70_xpath的基本使用.html')
 # li_list = html_tree.xpath('//ul/li[@id="l1"]/@class')
 # li_list = html_tree.xpath('//ul/li[contains(@id,"l")]/text()')
 li_list = html_tree.xpath('//ul/li[starts-with(@id,"c")]/text()')
-
+# 如果的话xpath解析的内容是列表的话直接用强转直接转为字符串的说str()
 # print(li_list)
-
 # print(len(li_list))
 print(li_list)
+
+
 
 
 
