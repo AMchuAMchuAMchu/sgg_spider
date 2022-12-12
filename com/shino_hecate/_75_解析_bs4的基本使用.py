@@ -5,7 +5,6 @@
 # CreateTime ==> 2022-11-30 20:19:07
 # Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
 
-
 from bs4 import BeautifulSoup
 
 file = open(file=r'D:\seldom\rd\Python_ProjectAll\sgg_spider\com\shino_hecate\_75_解析_bs4的基本使用.html',mode='r',encoding='utf-8')

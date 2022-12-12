@@ -15,6 +15,8 @@ content = response01.read().decode('utf-8')
 
 baidu_tree = etree.HTML(text=content)
 
+# print(baidu_tree)
+
 baiduOne = baidu_tree.xpath('//span/input[@id="su"]/@value')
 
 print(baiduOne)
