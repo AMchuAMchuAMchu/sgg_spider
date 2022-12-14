@@ -7,4 +7,8 @@ class BaiduSpider(scrapy.Spider):
     start_urls = ['http://www.baidu.com/']
 
     def parse(self, response):
+        print()
+        print()
         print('诗乃.......kirito....桐谷和人.....')
+        print()
+        print()

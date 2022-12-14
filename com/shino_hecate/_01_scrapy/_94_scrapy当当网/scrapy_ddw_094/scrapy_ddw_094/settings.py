@@ -1,4 +1,4 @@
-# Scrapy settings for scrapy_baidu_091 project
+# Scrapy settings for scrapy_ddw_094 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapy_baidu_091'
+BOT_NAME = 'scrapy_ddw_094'
 
-SPIDER_MODULES = ['scrapy_baidu_091.spiders']
-NEWSPIDER_MODULE = 'scrapy_baidu_091.spiders'
+SPIDER_MODULES = ['scrapy_ddw_094.spiders']
+NEWSPIDER_MODULE = 'scrapy_ddw_094.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapy_baidu_091 (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapy_ddw_094 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-# ROBOTSTXT_OBEY = False
+# ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ NEWSPIDER_MODULE = 'scrapy_baidu_091.spiders'
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapy_baidu_091.middlewares.ScrapyBaidu091SpiderMiddleware': 543,
+#    'scrapy_ddw_094.middlewares.ScrapyDdw094SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapy_baidu_091.middlewares.ScrapyBaidu091DownloaderMiddleware': 543,
+#    'scrapy_ddw_094.middlewares.ScrapyDdw094DownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -62,9 +62,9 @@ NEWSPIDER_MODULE = 'scrapy_baidu_091.spiders'
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'scrapy_baidu_091.pipelines.ScrapyBaidu091Pipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'scrapy_ddw_094.pipelines.ScrapyDdw094Pipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
