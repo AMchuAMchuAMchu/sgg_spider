@@ -3,8 +3,11 @@ from scrapy_ddw_094.items import ScrapyDdw094Item
 
 class DdwSpider(scrapy.Spider):
     name = 'ddw'
-    allowed_domains = ['http://category.dangdang.com/cp01.01.02.00.00.00.html']
+    allowed_domains = ['category.dangdang.com']
     start_urls = ['http://category.dangdang.com/cp01.01.02.00.00.00.html']
+    # http://category.dangdang.com/pg2-cp01.01.02.00.00.00.html
+    base_url = 'http://category.dangdang.com/pg'
+    page = 1
 
     def parse(self, response):
         # //ul[@id="component_59"]/li
@@ -28,3 +31,9 @@ class DdwSpider(scrapy.Spider):
             yield book
         print()
         print()
+
+#             # http://category.dangdang.com/pg2-cp01.01.02.00.00.00.html
+        if self.page < 100:
+            self.page = self.page +1
+            url = self.base_url + str(self.page) + '-cp01.01.02.00.00.00.html'
+            yield scrapy.Request(url=url,callback=self.parse)

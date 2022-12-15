@@ -64,6 +64,7 @@ NEWSPIDER_MODULE = 'scrapy_ddw_094.spiders'
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'scrapy_ddw_094.pipelines.ScrapyDdw094Pipeline': 300,
+   'scrapy_ddw_094.pipelines.ScrapyDdwPicPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

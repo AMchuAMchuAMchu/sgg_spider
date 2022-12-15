@@ -12,17 +12,25 @@ class ScrapyDdw094Pipeline:
 
     def open_spider(self,spider):
         self.fp = open(file='book.json',mode='w',encoding='utf-8')
-        self.fp.write('[')
+        # self.fp.write('[')
 
     def process_item(self, item, spider):
         self.fp.write(str(item))
-        if item:
-            self.fp.write(',')
+        # if item:
+        #     self.fp.write(',')
         return item
 
     def close_spider(self,spider):
-        self.fp.write(']')
+        # self.fp.write(']')
         self.fp.close()
 
+import urllib.request as request
 
+class ScrapyDdwPicPipeline:
+
+    def process_item(self, item, spider):
+        url = 'http:'+item.get('src')
+        filename = './books/'+item.get('name')+'.jpg'
+        request.urlretrieve(url=url,filename=filename)
+        return item
 
